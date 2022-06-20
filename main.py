@@ -24,7 +24,7 @@ while True:
                 h, w, c = img.shape
                 cx, cy =  int(lm.x*w), int(lm.y*h)
 
-            mpDraw.draw_hand_landmarks(img, handLms)
+            mpDraw.draw_hand_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
